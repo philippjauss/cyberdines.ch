@@ -5,3 +5,4 @@ nbproject/project.xml
 public_html/.htaccess
 public_html/@LongLink
 public_html/phpinfo.php
+public_html/BingSiteAuth.xml
