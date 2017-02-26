@@ -1,0 +1,282 @@
+body {
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding-top:50px;
+    background-color:#0A5414;
+    /*background: -webkit-gradient(linear, 0 0, 0 100%, from(darkgreen), to(darkblue));
+    background: -moz-linear-gradient(top, darkgreen, darkblue);
+    background: -ms-linear-gradient(top, darkgreen, darkblue);*/
+
+   
+}
+
+.body-content a{
+color: #91D0A1;
+text-decoration: underline;
+font-weight: bold;
+}
+
+.customCarouselImg img {
+    width: auto;
+    height: auto;
+    max-height: 430px;
+}
+
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #A3EBB6;
+}
+
+h4 {
+  margin-top: 25px;
+
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+font-family: "Noto Sans",Helvetica,Arial,sans-serif;
+/*font-weight: 500;*/
+line-height: 1.1;
+}
+
+[class*="col-"] {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  min-height: 10px;
+  background-color:#006400;
+}
+.rightBox {
+    background-color: #0A5414;
+}
+
+/* Metro things */
+
+.tileBox {
+    height:150px; width: 100%;float:left;color:white;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.tileBox p{
+    position:absolute; /* absolute position (so we can position it where we want)*/  
+    bottom:0px; /* position will be on bottom */  
+    left:0px;  
+    width:100%;
+    min-height: 50px;
+    /* styling bellow */  
+    background-color:black;  
+    /*font-family: 'Arial';  */
+    font-size:13px;  
+    color:white;  
+    opacity:0.6; /* transparency */  
+    margin-bottom:0px;
+    padding: 5px;
+    font-weight:  normal;
+}
+
+.tileBox p.clean {
+position:relative;
+bottom:  inherit;
+left:  initial;
+background-color: transparent;
+opacity: 1;
+min-height: 0px;
+font-weight:  bold;
+font-family: inherit;
+font-style:  inherit;
+font-size: 2em;
+border: 0 none;
+outline: 0;
+padding: 0;
+margin: 0;
+
+text-align: center;
+vertical-align: middle;
+line-height: 150px;
+
+
+}
+
+.tileBox a{
+    height: 100%;
+    display: block;
+    vertical-align: bottom;
+    text-decoration: none;
+
+}
+.tileBox a b{
+        font-size: 1.5em;
+}
+
+.myMetroTile-subpages{
+    width:50%;
+    float:left;
+    padding:0px;
+    height:150px; 
+    	-webkit-transition: 0.1s all;
+	-moz-transition: 0.1s all;
+	-ms-transition: 0.1s all;
+	transition: 0.1s all;
+}
+
+.myMetroTile-SubjectsBoxLarge{
+    width:50%;
+    float:left;
+    padding:0px;
+    	-webkit-transition: 0.1s all;
+	-moz-transition: 0.1s all;
+	-ms-transition: 0.1s all;
+	transition: 0.1s all;
+}
+.myMetroTile-SubjectsBoxMedium{
+    width:25%;
+    float:left;
+    padding:0px;
+    	-webkit-transition: 0.1s all;
+	-moz-transition: 0.1s all;
+	-ms-transition: 0.1s all;
+	transition: 0.1s all;
+}
+
+div.myMetroTile-subpages:hover,
+div.myMetroTile-SubjectsBoxMedium:hover,
+div.myMetroTile-SubjectsBoxLarge:hover {
+	-webkit-transform: scale(0.95) perspective(400px) rotateY(0deg) rotateX(0deg);
+	-moz-transform: scale(0.95) perspective(400px) rotateY(0deg) rotateX(0deg);
+	-ms-transform: scale(0.95) perspective(400px) rotateY(0deg) rotateX(0deg);
+	transform: scale(0.95) perspective(400px) rotateY(0deg) rotateX(0deg);
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    background-color: black;
+  /*margin-bottom: 60px;*/
+
+  /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+  /*margin-top: -90px;*/
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  /*z-index: 10;*/
+}
+
+/* Declare heights because of positioning of img element */
+/*.carousel .item {
+  height: 430px;
+}*/
+.carousel-inner > .item > img {
+  
+  /*min-width: 100%;*/
+  /*height: 350px;*/
+  
+  width: auto;
+  height: auto;
+  max-height: 330px;
+  margin: 0 auto;
+}
+
+.navbar-inverse {
+    background-color:  #0a5414;
+    /* remove the gradient */
+    background-image: none;
+    /* set font color to white */
+    color: white;
+}  
+/* set active item to darkgreen */
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+     background-color: darkgreen;
+     color: white;
+}
+
+
+
+
+.gf-result .gf-author, .gf-result .gf-spacer, .gf-result .gf-relativePublishedDate {
+color: #91D0A1;
+display: inline;
+}
+
+.gf-result {
+    padding-top:1.5em;
+   
+}
+
+.gf-spacer{
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.gf-title{
+    font-size: 1.2em;
+}
+
+.gfc-result {
+    border-bottom: 1px dashed;
+}
+
+.gf-snippet {
+    margin-bottom: 1.5em;
+}
+
+.padding0 {
+    padding: 0px;
+}
+.margin0 {
+    margin: 0px;
+}
+
+
+div.tileXing {
+    background-color: #026466;
+    background-image: url("../img/glyphicons_social_12_xing@2x.png");    
+}
+
+div.tileGp {
+    background-color: #D34937;
+    background-image: url("../img/glyphicons_social_02_google_plus@2x.png");    
+}
+
+div.tileTwitter {
+    background-color: #00C0F7;
+
+    background-image: url("../img/glyphicons_social_31_twitter@2x.png");    
+}
+
+div.tileMail {
+    background-color: #C6C4BC;
+    background-image: url("../img/glyphicons_social_39_e-mail@2x.png");    
+}
+
+html {
+	overflow-y: scroll; 
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+

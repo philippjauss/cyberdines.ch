@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photos von und mit Philipp Jauss">
+    <meta name="author" content="Philipp Jauss">
+    <title>www.cyberdines.ch Photos</title>
+
+    <!-- Bootstrap core CSS 
+    durch das cdn 
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/css/bootstrap.min.css"> -->
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="http://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet" type="text/css">
+
+    <link href="customcss/custom.min.css" rel="stylesheet">       
+   <!-- Scripts for the slideshow -->
+    <script src="//www.google.com/jsapi" type="text/javascript"></script>
+    <script src="customjs/gfslideshow.min.js"
+            type="text/javascript"></script>
+    <style type="text/css">
+      #picasaSlideshow, #picasaSlideshow2, #picasaSlideshow3, #picasaSlideshow4, #picasaSlideshow5, #picasaSlideshow6  {
+        width:  33%;
+        height: 113px;
+        margin-bottom: 0px;
+        padding: 0px;
+        float:left;
+      }
+    </style>
+
+    
+    <script type="text/javascript">
+    /*
+    *  How to make a slideshow with a photo feed using our custom control.
+    *  To see the options, go here or click the docs link in the titlebar:
+    *  http://www.google.com/uds/solutions/slideshow/index.html
+    */
+    
+    google.load("feeds", "1");
+    
+    function OnLoad() {
+      var feed1  = "http://www.gate107.com/gallery2/main.php?g2_view=rss.SimpleRender&g2_itemId=20";
+      var feed2  = "http://www.gate107.com/gallery2/main.php?g2_view=rss.SimpleRender&g2_itemId=6599";
+      var feed3  = "http://www.gate107.com/gallery2/main.php?g2_view=rss.SimpleRender&g2_itemId=3800";
+      var feed4  = "http://www.gate107.com/gallery2/main.php?g2_view=rss.SimpleRender&g2_itemId=3991";
+      var feed5  = "http://www.gate107.com/gallery2/main.php?g2_view=rss.SimpleRender&g2_itemId=3378";
+      var feed6  = "http://www.gate107.com/gallery2/main.php?g2_view=rss.SimpleRender&g2_itemId=2659";
+      var options = {
+        numResults:20,
+        displayTime:2000,
+        transistionTime:600,
+        scaleImages:true
+ 
+      };
+            var options2 = {
+        displayTime:3000,
+        transistionTime:300,
+        numResults:20,
+        scaleImages:true
+      };
+            var options3 = {
+        displayTime:2500,
+        transistionTime:900,
+        numResults:30,
+        scaleImages:true
+      };
+
+      var s1 = new GFslideShow(feed1, "picasaSlideshow", options);
+      var s2 = new GFslideShow(feed2, "picasaSlideshow2", options2);
+      var s3 = new GFslideShow(feed3, "picasaSlideshow3", options3);
+      var s4 = new GFslideShow(feed4, "picasaSlideshow4", options3);  
+      var s5 = new GFslideShow(feed5, "picasaSlideshow5", options3);  
+      var s6 = new GFslideShow(feed6, "picasaSlideshow6", options3);  
+    }
+    
+    google.setOnLoadCallback(OnLoad);
+    </script>
+ 
+ 
+  </head>
+
+  <body>
+      <!-- Navigation -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">cyberdines.ch</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="info.html">Info</a></li> 
+            <li><a href="kontakt.html">Kontakt</a></li>            
+            <li><a href="blog.html">Blog</a></li>
+            <li class="active"><a href="photos.html">Photos</a></li>
+            <li><a href="diverses.html">Diverses</a></li>                        
+
+
+          </ul>
+          
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+    <!-- Detail container -->  
+    <div class="container">
+        <div class="body-content">
+            <div class="row">
+                <!-- Detailspalte -->
+                <div class="col-md-9">
+                    <!-- Detail Bild, Teaser -->
+                    <div class="row">
+                        <!-- Detail Bild -->
+                        <div class="col-md-9">
+                         <!-- Carousel ================================================== -->
+                            <div id="myCarousel" class="carousel slide">
+                                                    <!-- Indicators -->
+                              <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                              </ol>
+                              <div class="carousel-inner">
+                                <div class="item active">
+                                  <img src="img/slider1.jpg">
+                                  <div class="container">
+                                    <div class="carousel-caption">
+                                        <h4>Aladin und Saphir</h4>
+                                        <p>Die beiden Brüder waren ein Herz und eine Seele</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="item">
+                                  <img src="img/slider2.jpg">
+                                  <div class="container">
+                                    <div class="carousel-caption">
+                                        <h4>Aladin</h4>
+                                        <p>Er ist der frechere von den beiden</p>
+
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="item">
+                                  <img src="img/slider3.jpg">
+                                  <div class="container">
+                                    <div class="carousel-caption">
+                                        <h4>Saphir</h4>
+                                        <p>Er war eine richtige kleine "Diva" aber total herzlich</p>
+
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                              <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                            </div><!-- /.carousel -->
+                
+                        </div>
+                        <!-- Detail Teaser -->
+                        <div class="col-md-3">
+                             <h1>Photos</h1>
+                             <p>
+                                  Sind doch was tolles. Und besonders wenn man viele davon hat, um sie später wieder einmal anzuschauen und darüber zu lachen.
+                             </p>
+                        </div>
+                    </div>
+                    <!-- Detail Full -->
+                    <div class="row">
+                        <div class="col-md-12">
+                             <h2>Einfach drauflos knippsen</h2>
+                             <p>
+                                Das mache ich zumindest, denn man muss ja kein Geld mehr für das "Entwickeln" ausgeben wie früher. Und es gibt ja auch genügend Bilder-Dienste um diese entweder öffentlich zu teilen, oder einfach nur auf seinem NAS im digitalen Wohnzimmer anzuschauen. 
+                                Ich benutze unter anderem inzwischen auch Google+ um Photos mit meinen Freunden zu teilen oder meinen Webserver auf dem ich noch das alte Gallery2 als Bilderalbum verwende.
+                                Koken schaue ich mir momentan auch noch an, das vielleicht mein altes Gallery-Album-System ablösen wird. 
+                             </p>
+                             <h2>Ein paar Photos aus meiner Gallery</h2>
+                             <p>
+                                 Gallery2 RSS Feed mit google feed api eingebettet 
+                             </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" style="padding-top:15px;">
+                        <div id="picasaSlideshow" class="gslideshow"><div class="feed-loading">Loading...</div></div>  
+                        <div id="picasaSlideshow2" class="gslideshow"><div class="feed-loading">Loading...</div></div> 
+                        <div id="picasaSlideshow3" class="gslideshow"><div class="feed-loading">Loading...</div></div> 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12"  style="padding-top:15px;">
+                        <div id="picasaSlideshow4" class="gslideshow"><div class="feed-loading">Loading...</div></div> 
+                        <div id="picasaSlideshow5" class="gslideshow"><div class="feed-loading">Loading...</div></div> 
+                        <div id="picasaSlideshow6" class="gslideshow"><div class="feed-loading">Loading...</div></div>   
+                        </div>
+                    </div>                                         
+                    <div class="row">
+                        <div class="col-md-12">
+                            <br>
+                            <p>Das sind nur ein paar "Müsterchen" die auf meinem eigenen Photoalbum bei gate107.com liegen und über den "Kachel"-Link erreicht werden kann.</p>
+                        </div>
+                    </div>                    
+                    
+                      
+                </div>
+                <!-- Rechte Subseitenspalte -->
+                <div class="col-md-3 padding0 rightBox" >
+
+                    <div class="row margin0">
+                        <div class="col-md-6 myMetroTile-subpages">
+                            <div  class="tileBox" style="background-color: #D34937;"><a href="http://www.gate107.com/gallery2"><p class="clean">G2</p><p><b>Gallery2:</b> mein selbst gehostetes Album</p></a></div>
+                        </div>
+                        <div class="col-md-6 myMetroTile-subpages">
+                            <div  class="tileBox" style="background-color: #C6C4BC;"><a href="http://www.gate107.com/koken"><p class="clean">K</p><p><b>Koken:</b> vielleicht die Ablösung für Gallery2?</p></a></div>
+                        </div>
+                    </div>
+                    <div class="row margin0">
+                        <div class="col-md-6 myMetroTile-subpages">
+                            <div  class="tileBox" style="background-color: #00C0F7;"><a href="http://www.flickr.com"><p class="clean">F</p><p><b>Flicker:</b> wäre auch 'ne Möglichkeit</p></a></div>
+                        </div>
+                    </div>           
+
+                </div>
+            
+            </div>
+            <!-- Weitere Themen -->
+            <div class="row">
+                <div class="col-md-12 padding0">
+                    <div class="row margin0">
+                        <div class="col-md-3 myMetroTile-SubjectsBoxMedium">
+                            <div class="tileBox" style="background-color:  #094AB2;">
+                                <a href="index.html">
+                                    <p class="clean">Home</p><p><b>Die</b> Hauptseite meiner Homepage</p></a>
+                            </div>
+                        </div>                
+                        <div class="col-md-6 myMetroTile-SubjectsBoxLarge">
+                            <div class="tileBox" style="background-color:  #AC193D;">
+                                <a href="kontakt.html">
+                                    <p class="clean">Kontakt</p><p><b>Wie</b> man mich erreicht</p></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 myMetroTile-SubjectsBoxMedium">
+                            <div class="tileBox" style=" background-color:  #D24726; ">
+                                 <a href="info.html">
+                                     <p class="clean">Info</p><p><b>Die</b> nüchternen Fakten über mich</p></a>
+                            </div>
+                        </div>                        
+
+                    </div> 
+                        <div class="row margin0">
+                            <div class="col-md-6 myMetroTile-SubjectsBoxLarge">
+                                <div class="tileBox" style="background-color:  #008A00;">
+                                    <a href="blog.html">
+                                        <p class="clean">Blog</p><p><b>Mein</b> eigener Blog</p></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 myMetroTile-SubjectsBoxLarge">
+                                <div class="tileBox" style="background-color:  #008299;">
+                                    <a href="diverses.html">
+                                        <p class="clean">Diverses</p><p><b>Alles</b> was sich sonst nich kategorisieren lässt</p></a>
+                                </div>
+                            </div>                    
+                        </div>
+                                
+                </div>
+              </div><!-- Weitere Themen ende--> 
+
+      
+         </div>
+    </div> <!-- /container -->
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- bootstrap js durch das cdn 
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>-->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-13077377-2']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+      </script>    
+  </body>
+</html>
+
