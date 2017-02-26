@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="utf-8">
     <title>www.cyberdines.ch Blog</title>
@@ -7,64 +8,67 @@
     <meta name="description" content="Bloginformationen">
     <meta name="author" content="Philipp Jauss">
     <link href="css/styles.css" rel="stylesheet">
-    <link href="http://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet" type="text/css">     
+    <link href="http://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet" type="text/css">
 
     <script src="//www.google.com/jsapi" type="text/javascript"></script>
     <script type="text/javascript">
-    /*
-    *  How to use the Feed Control to grab, parse and display feeds.
-    */
-    
-    google.load("feeds", "1",{'nocss' : 1});
-    /*google.load("feeds", "1");*/
-    
-    function OnLoad() {
-      // Create a feed control
-      var feedControl = new google.feeds.FeedControl();
-    
-      // Add two feeds.
-      feedControl.addFeed("http://www.gate107.com/wordpress/feed/");
-    
-      feedControl.setNumEntries(5);
-        
-      // Draw it.
-      feedControl.draw(document.getElementById("feed-content"));
-    }
-    
-    
-    google.setOnLoadCallback(OnLoad);
-    </script> 
- 
-  </head>
+        /*
+         *  How to use the Feed Control to grab, parse and display feeds.
+         */
 
-  <body>
-      <!-- Navigation -->
+        google.load("feeds", "1", {
+            'nocss': 1
+        });
+        /*google.load("feeds", "1");*/
+
+        function OnLoad() {
+            // Create a feed control
+            var feedControl = new google.feeds.FeedControl();
+
+            // Add two feeds.
+            feedControl.addFeed("http://www.gate107.com/wordpress/feed/");
+
+            feedControl.setNumEntries(5);
+
+            // Draw it.
+            feedControl.draw(document.getElementById("feed-content"));
+        }
+
+
+        google.setOnLoadCallback(OnLoad);
+    </script>
+
+</head>
+
+<body>
+    <!-- Navigation -->
     <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">cyberdines.ch</a>
+                <a class="navbar-brand" href="index.html">cyberdines.ch</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="info.html">Info</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li class="active"><a href="blog.html">Blog</a></li>
+                    <li><a href="photos.html">Photos</a></li>
+                    <li><a href="diverses.html">Diverses</a></li>
+
+
+                </ul>
+
+            </div>
+            <!--/.navbar-collapse -->
         </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="info.html">Info</a></li> 
-            <li><a href="kontakt.html">Kontakt</a></li>            
-            <li class="active"><a href="blog.html">Blog</a></li>
-            <li><a href="photos.html">Photos</a></li>
-            <li><a href="diverses.html">Diverses</a></li>                        
-
-
-          </ul>
-          
-        </div><!--/.navbar-collapse -->
-      </div>
     </div>
-    <!-- Detail container -->  
+    <!-- Detail container -->
     <div class="container">
         <div class="body-content">
             <div class="row">
@@ -74,179 +78,192 @@
                     <div class="row">
                         <!-- Detail Bild -->
                         <div class="col-md-9">
-                         <!-- Carousel ================================================== -->
+                            <!-- Carousel ================================================== -->
                             <div id="myCarousel" class="carousel slide">
-                                                    <!-- Indicators -->
-                              <ol class="carousel-indicators">
-                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#myCarousel" data-slide-to="1"></li>
-                                <li data-target="#myCarousel" data-slide-to="2"></li>
-                              </ol>
-                              <div class="carousel-inner">
-                                <div class="item active">
-                                  <img src="images/slider1.jpg">
-                                  <div class="container">
-                                    <div class="carousel-caption">
-                                        <h4>Aladin und Saphir</h4>
-                                        <p>Die beiden Brüder waren ein Herz und eine Seele</p>
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <img src="images/slider1.jpg">
+                                        <div class="container">
+                                            <div class="carousel-caption">
+                                                <h4>Aladin und Saphir</h4>
+                                                <p>Die beiden Brüder waren ein Herz und eine Seele</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                  </div>
-                                </div>
-                                <div class="item">
-                                  <img src="images/slider2.jpg">
-                                  <div class="container">
-                                    <div class="carousel-caption">
-                                        <h4>Aladin</h4>
-                                        <p>Er ist der frechere von den beiden</p>
+                                    <div class="item">
+                                        <img src="images/slider2.jpg">
+                                        <div class="container">
+                                            <div class="carousel-caption">
+                                                <h4>Aladin</h4>
+                                                <p>Er ist der frechere von den beiden</p>
 
+                                            </div>
+                                        </div>
                                     </div>
-                                  </div>
-                                </div>
-                                <div class="item">
-                                  <img src="images/slider3.jpg">
-                                  <div class="container">
-                                    <div class="carousel-caption">
-                                        <h4>Saphir</h4>
-                                        <p>Er war eine richtige kleine "Diva" aber total herzlich</p>
+                                    <div class="item">
+                                        <img src="images/slider3.jpg">
+                                        <div class="container">
+                                            <div class="carousel-caption">
+                                                <h4>Saphir</h4>
+                                                <p>Er war eine richtige kleine "Diva" aber total herzlich</p>
 
+                                            </div>
+                                        </div>
                                     </div>
-                                  </div>
                                 </div>
-                              </div>
-                              <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-                              <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-                            </div><!-- /.carousel -->
-                
+                                <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                                <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                            </div>
+                            <!-- /.carousel -->
+
                         </div>
                         <!-- Detail Teaser -->
                         <div class="col-md-3">
-                             <h1>Warum ein Blog ?</h1>
-                             <p>
-                                  Wenn mich mal die Schreibwut packt, dann mach ich das in meinem eigenen Blog.
-                             </p>
+                            <h1>Warum ein Blog ?</h1>
+                            <p>
+                                Wenn mich mal die Schreibwut packt, dann mach ich das in meinem eigenen Blog.
+                            </p>
                         </div>
                     </div>
                     <!-- Detail Full -->
                     <div class="row">
                         <div class="col-md-12">
-                             <h2>Wie es dazu kam</h2>
-                             <p>
-                                Wie vieles habe ich das auch nur aus reinem Interesse angefangen, 
-                                um herauszufinden, wie sich denn eine solche Blogsoftware auf dem 
-                                eigenen Server einrichten lässt. Andereseits packt mich doch 
-                                gelegentlich die Schreibwut (sei es ob ich mich mal wieder über 
-                                etwas aufgeregt habe, oder weil ich etwas toll finde). Und 
-                                ausserdem ist es Witzig nach ein paar Jahren zu sehen, was man 
-                                denn mal so dachte. Ein digitales Tagebuch wäre wohl eine passende 
-                                Beschreibung dafür, wobei ich natürlich ein Tagebuch wohl kaum öffentlich machen würde.
-                             </p>
-                             <p>
-                                Wie bereits erwähnt, habe ich die Blogsoftware (Wordpress) auf'm eigenen 
-                                Server zuhause am laufen. Schon herrlich 
-                                wie einfach sich sowas heutzutage installieren und konfigurieren lässt. Und 
-                                das für null Knete.
-                             </p>
-                             <h2>Die letzten Einträge </h2>
+                            <h2>Wie es dazu kam</h2>
+                            <p>
+                                Wie vieles habe ich das auch nur aus reinem Interesse angefangen, um herauszufinden, wie sich denn eine solche Blogsoftware
+                                auf dem eigenen Server einrichten lässt. Andereseits packt mich doch gelegentlich die Schreibwut
+                                (sei es ob ich mich mal wieder über etwas aufgeregt habe, oder weil ich etwas toll finde).
+                                Und ausserdem ist es Witzig nach ein paar Jahren zu sehen, was man denn mal so dachte. Ein
+                                digitales Tagebuch wäre wohl eine passende Beschreibung dafür, wobei ich natürlich ein Tagebuch
+                                wohl kaum öffentlich machen würde.
+                            </p>
+                            <p>
+                                Wie bereits erwähnt, habe ich die Blogsoftware (Wordpress) auf'm eigenen Server zuhause am laufen. Schon herrlich wie einfach
+                                sich sowas heutzutage installieren und konfigurieren lässt. Und das für null Knete.
+                            </p>
+                            <h2>Die letzten Einträge </h2>
 
                             <div id="feed-content">
                                 <span style="color:#676767;font-size:11px;margin:10px;padding:4px;">Loading...</span>
-                            </div>                             
+                            </div>
 
                         </div>
-                    </div> 
+                    </div>
                     <div class="row">
                         <div class="col-md-12">
 
                         </div>
-                    </div>                     
-                    
-                      
+                    </div>
+
+
                 </div>
                 <!-- Rechte Subseitenspalte -->
-                <div class="col-md-3 padding0" >
+                <div class="col-md-3 padding0">
 
                     <div class="row margin0">
                         <div class="col-md-6 myMetroTile-subpages">
-                            <div  class="tileBox" style="background-color: #008299;">
+                            <div class="tileBox" style="background-color: #008299;">
                                 <a href="http://www.gate107.com/wordpress" target="_blank">
-                                <p class='clean'>B</p><p><b>Blog:</b> meins!</p></a>
+                                    <p class="clean">B</p>
+                                    <p><b>Blog:</b> meins!</p>
+                                </a>
                             </div>
                         </div>
                         <div class="col-md-6 myMetroTile-subpages">
-                            <div  class="tileBox" style="background-color: #2672EC;">
+                            <div class="tileBox" style="background-color: #2672EC;">
                                 <a href="http://www.wordpress.org" target="_blank">
-                                <p class='clean'>W</p><p><b>Wordpress:</b> Die offizielle Seite</p></a>
+                                    <p class="clean">W</p>
+                                    <p><b>Wordpress:</b> Die offizielle Seite</p>
+                                </a>
                             </div>
                         </div>
                     </div>
-         
+
 
                 </div>
-            
+
             </div>
-                <!-- Weitere Themen -->
-              <div class="row">
+            <!-- Weitere Themen -->
+            <div class="row">
                 <div class="col-md-12 padding0">
                     <div class="row margin0">
                         <div class="col-md-3 myMetroTile-SubjectsBoxMedium">
                             <div class="tileBox" style="background-color:  #008A00;">
                                 <a href="index.html">
-                                    <p class="clean">Home</p><p><b>Die</b> Hauptseite meiner Homepage</p></a>
+                                    <p class="clean">Home</p>
+                                    <p><b>Die</b> Hauptseite meiner Homepage</p>
+                                </a>
                             </div>
-                        </div>                
+                        </div>
                         <div class="col-md-6 myMetroTile-SubjectsBoxLarge">
                             <div class="tileBox" style="background-color:  #AC193D;">
                                 <a href="kontakt.html">
-                                    <p class="clean">Kontakt</p><p><b>Wie</b> man mich erreicht</p></a>
+                                    <p class="clean">Kontakt</p>
+                                    <p><b>Wie</b> man mich erreicht</p>
+                                </a>
                             </div>
                         </div>
 
                         <div class="col-md-3 myMetroTile-SubjectsBoxMedium">
                             <div class="tileBox" style=" background-color:  #D24726; ">
-                                 <a href="info.html">
-                                     <p class="clean">Info</p><p><b>Die</b> nüchternen Fakten über mich</p></a>
+                                <a href="info.html">
+                                    <p class="clean">Info</p>
+                                    <p><b>Die</b> nüchternen Fakten über mich</p>
+                                </a>
                             </div>
-                        </div> 
                         </div>
-                        <div class="row margin0">
-                            <div class="col-md-6 myMetroTile-SubjectsBoxLarge">
-                                <div class="tileBox" style="background-color:  #094AB2;">
-                                    <a href="photos.html">
-                                        <p class="clean">Photos</p><p><b>Auch</b> ich knippse gerne, auch wenn nicht profesionell</p></a>
-                                </div>
+                    </div>
+                    <div class="row margin0">
+                        <div class="col-md-6 myMetroTile-SubjectsBoxLarge">
+                            <div class="tileBox" style="background-color:  #094AB2;">
+                                <a href="photos.html">
+                                    <p class="clean">Photos</p>
+                                    <p><b>Auch</b> ich knippse gerne, auch wenn nicht profesionell</p>
+                                </a>
                             </div>
-                            <div class="col-md-6 myMetroTile-SubjectsBoxLarge">
-                                <div class="tileBox" style="background-color:  #008299;">
-                                    <a href="diverses.html">
-                                        <p class="clean">Diverses</p><p><b>Alles</b> was sich sonst nich kategorisieren lässt</p></a>
-                                </div>
-                            </div>                    
                         </div>
-                                 
+                        <div class="col-md-6 myMetroTile-SubjectsBoxLarge">
+                            <div class="tileBox" style="background-color:  #008299;">
+                                <a href="diverses.html">
+                                    <p class="clean">Diverses</p>
+                                    <p><b>Alles</b> was sich sonst nich kategorisieren lässt</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-              </div> <!-- Weitere Themen ende --> 
+            </div>
+            <!-- Weitere Themen ende -->
 
-      
-         </div>
-    </div> <!-- /container -->
 
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <!-- bootstrap js durch das cdn 
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>-->
+        </div>
+    </div>
+    <!-- /container -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
-
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-13077377-2']);
         _gaq.push(['_trackPageview']);
 
-        (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
+                '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
         })();
+    </script>
+</body>
 
-      </script>    
-  </body>
 </html>
-

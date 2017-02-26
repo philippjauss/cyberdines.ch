@@ -137,13 +137,13 @@
                         <div class="col-md-6 myMetroTile-subpages">
                             <div  class="tileBox" style="background-color: #AC193D;">
                                 <a href="info.html">
-                                <p class='clean'>i</p><p><b>Zurück:</b> zur Info</p></a>
+                                <p class="clean">i</p><p><b>Zurück:</b> zur Info</p></a>
                             </div>
                         </div>
                         <div class="col-md-6 myMetroTile-subpages">
                             <div  class="tileBox" style="background-color: #2672EC;">
                                 <a href="beruflicherwerdegang.html">
-                                <p class='clean'>W</p><p><b>Beruflicher Werdegang:</b> wo ich überall war</p></a>
+                                <p class="clean">W</p><p><b>Beruflicher Werdegang:</b> wo ich überall war</p></a>
                             </div>
                         </div>
 
@@ -152,13 +152,13 @@
                         <div class="col-md-6 myMetroTile-subpages">
                             <div  class="tileBox" style="background-color: #8C0095;">
                                 <a href="leidenschaft.html">
-                                <p class='clean'>L</p><p><b>Leidenschaft:</b> Ganz einfach IT</p></a>
+                                <p class="clean">L</p><p><b>Leidenschaft:</b> Ganz einfach IT</p></a>
                             </div>
                         </div>
                         <div class="col-md-6 myMetroTile-subpages">
                             <div  class="tileBox" style="background-color: #5133AB;">
                                 <a href="faszination.html">
-                                <p class='clean'>F</p><p><b>Faszination:</b> Katzen, ich könnte nicht ohne.</p></a>
+                                <p class="clean">F</p><p><b>Faszination:</b> Katzen, ich könnte nicht ohne.</p></a>
                             </div>
                         </div>
                     </div>
@@ -166,13 +166,13 @@
                         <div class="col-md-6 myMetroTile-subpages">
                             <div  class="tileBox" style="background-color: #C49826;">
                                 <a href="ndsdetails.html">
-                                <p class='clean'>N</p><p><b>NDS:</b> Die Details zum NDS</p></a>
+                                <p class="clean">N</p><p><b>NDS:</b> Die Details zum NDS</p></a>
                             </div>
                         </div>
                         <div class="col-md-6 myMetroTile-subpages">
                             <div  class="tileBox" style="background-color: #4861E7;">
                                 <a href="http://www.bzu.ch/CMS4.ASPX?NID=4" target="_blank">
-                                <p class='clean'>H</p><p><b>HFU:</b> Da habe ich das NDS gemacht</p></a>
+                                <p class="clean">H</p><p><b>HFU:</b> Da habe ich das NDS gemacht</p></a>
                             </div>
                         </div>
                     </div>
@@ -226,11 +226,22 @@
          </div>
     </div> <!-- /container -->
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <!-- bootstrap js durch das cdn 
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-13077377-2']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
+                '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
         $(document).ready(function () {
             $('.carousel').carousel({
                 interval: 3000
@@ -238,19 +249,6 @@
 
             $('.carousel').carousel('cycle');
         });
-    </script>
-    <script type="text/javascript">
-
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-13077377-2']);
-        _gaq.push(['_trackPageview']);
-
-        (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-
-      </script>    
+    </script> 
   </body>
 </html>
