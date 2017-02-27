@@ -3,6 +3,12 @@ var concat = require('gulp-concat');
 var cleanCSS = require('gulp-clean-css');
 var htmlmin = require('gulp-htmlmin');
 var browserSync = require('browser-sync').create();
+var imagemin = require('gulp-imagemin');
+var pngquant = require('imagemin-pngquant');
+var jpegtran = require('imagemin-jpegtran');
+var gifsicle = require('imagemin-gifsicle');
+var optipng = require('imagemin-optipng');
+var uncss = require('gulp-uncss');
 
 
 
@@ -15,6 +21,9 @@ gulp.task('concatCSS', function () {
         }, function (details) {
             console.log(details.name + ': ' + details.stats.originalSize);
             console.log(details.name + ': ' + details.stats.minifiedSize);
+        }))
+        .pipe(uncss({
+            html: ['src/*.html']
         }))
         .pipe(gulp.dest('dist/css'));
 });
@@ -30,15 +39,27 @@ gulp.task('minifyHTML', function () {
         .pipe(gulp.dest('dist'));
 });
 
+// optimize images
+gulp.task('optimizeImages', function () {
+    return gulp.src('src/images/**')
+        .pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant(), jpegtran(), optipng(), gifsicle()]
+        }))
+        .pipe(gulp.dest('dist/images'));
+});
+
 
 // watcher
 gulp.task('watch', ['browser-sync'], function () {
     //gulp.watch('src/**/*', ['minifyHTML','concatCSS','reloadBrowser']);
-    gulp.watch('src/*.html', ['minifyHTML','reloadHTML']);
-    gulp.watch('src/css/*.css', ['concatCSS','reloadCSS']);
+    gulp.watch('src/*.html', ['minifyHTML', 'reloadHTML']);
+    gulp.watch('src/css/*.css', ['concatCSS', 'reloadCSS']);
+    gulp.watch('src/images/**', ['optimizeImages', 'reloadImages']);
 });
 
-gulp.task('reloadHTML', ['minifyHTML'], function(){
+gulp.task('reloadHTML', ['minifyHTML'], function () {
     browserSync.reload();
 });
 
@@ -46,9 +67,13 @@ gulp.task('reloadCSS', ['concatCSS'], function () {
     browserSync.reload();
 });
 
+gulp.task('reloadImages', ['optimizeImages'], function(){
+    browserSync.reload();
+});
+
 
 // Static server
-gulp.task('browser-sync', ['minifyHTML', 'concatCSS'], function () {
+gulp.task('browser-sync', ['optimizeImages','minifyHTML', 'concatCSS'], function () {
     browserSync.init({
         server: {
             baseDir: 'dist',
@@ -60,4 +85,4 @@ gulp.task('browser-sync', ['minifyHTML', 'concatCSS'], function () {
     });
 });
 
-gulp.task('default', ['minifyHTML', 'concatCSS', 'browser-sync', 'watch']);
+gulp.task('default', ['optimizeImages','minifyHTML', 'concatCSS', 'browser-sync', 'watch']);
